@@ -1,0 +1,88 @@
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--darkest);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .5s ease, visibilty .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, visibilty .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, visibilty .5s ease, transform .5s ease;
+  transition: opacity .5s ease, visibilty .5s ease, transform .5s ease, -webkit-transform .5s ease;
+}
+
+.modal--open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal__content {
+  width: 500px;
+  height: 300px;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--purple)));
+  background-image: linear-gradient(to right, var(--purple), var(--purple));
+  border-radius: 6px;
+  padding: 3rem;
+  -webkit-transition: opacity .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, -webkit-transform .5s ease;
+  transition: opacity .5s ease, transform .5s ease;
+  transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease;
+  opacity: 0;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.modal__content--open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.modal__content p {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--light)), to(var(--light)));
+  background-image: linear-gradient(to right, var(--light), var(--light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 700;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.modal__content p:hover {
+  opacity: 0.8;
+}
+
+.modal__content p:active {
+  opacity: 0.6;
+}
+
+.modal__content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+}
+/*# sourceMappingURL=Modal.css.map */

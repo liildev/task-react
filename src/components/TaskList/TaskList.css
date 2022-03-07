@@ -1,0 +1,118 @@
+:root {
+  --dark: #374151;
+  --darker: #1F2937;
+  --darkest: #111827;
+  --gray: #687280;
+  --light: #EEE;
+  --pink: #EC4899;
+  --purple: #885Cf6;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  background: var(--dark);
+  color: white;
+}
+
+.header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gray);
+  margin-bottom: 1rem;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray);
+  margin-top: 2rem;
+}
+
+.header form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header form input, .header form button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+}
+
+.header form #task-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0%;
+          flex: 1 1 0%;
+  color: var(--light);
+  background-color: var(--darker);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+.header form #task-input::-webkit-input-placeholder {
+  color: var(--gray);
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header form #task-input:-ms-input-placeholder {
+  color: var(--gray);
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header form #task-input::-ms-input-placeholder {
+  color: var(--gray);
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header form #task-input::placeholder {
+  color: var(--gray);
+  opacity: 0.8;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.header form #task-submit {
+  margin-left: 1rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  color: var(--pink);
+  font-size: 1.2rem;
+  font-weight: 700;
+  background: var(--darker);
+  color: var(--pink);
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header form #task-submit:hover {
+  opacity: 0.8;
+}
+
+.header form #task-submit:active {
+  opacity: 0.6;
+}
+/*# sourceMappingURL=TaskList.css.map */
